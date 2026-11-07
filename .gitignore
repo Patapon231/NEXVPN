@@ -1,0 +1,44 @@
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Runtime user data, secrets & logs (NEVER commit secrets or DBs)
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.bak
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+data/runtime/
+data/*.json
+data/*.bak
+logs/*.log
+logs/*.log.*
+
+# PyInstaller & Portable build outputs
+build/
+dist/
+NEXVPN_Portable/
+*.zip
+
+# Local core binaries (downloaded or placed during build)
+core/*.exe
+core/*.dll
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
